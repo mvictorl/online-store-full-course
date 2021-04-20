@@ -94,9 +94,10 @@ const CreateDevice = observer(({show, onHide}) => {
                         placeholder="Введите стоимость устройства"
                         type="number"
                     />
-                    <Form.Control
+                    <Form.File
                         className="mt-3"
-                        type="file"
+                        custom
+                        label={file ? file.name : 'Выберите файл'}
                         onChange={selectFile}
                     />
                     <hr/>
